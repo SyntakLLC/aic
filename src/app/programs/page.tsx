@@ -50,10 +50,15 @@ export default function ProgramsPage() {
             const programs = getProgramsForDay(day)
             return (
               <div key={day} className="border border-emerald-100 dark:border-emerald-900/30 rounded-lg">
-                <div className="px-4 py-3 border-b border-emerald-100 dark:border-emerald-900/30">
+                <div className="px-4 py-3 border-b border-emerald-100 dark:border-emerald-900/30 flex justify-between items-center">
                   <h3 className="font-medium text-emerald-900 dark:text-emerald-100">
                     {day}
                   </h3>
+                  {programs.length > 0 && (
+                    <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-400">
+                      {programs.length}
+                    </span>
+                  )}
                 </div>
                 <div className="p-4 min-h-[120px]">
                   {programs.length === 0 ? (

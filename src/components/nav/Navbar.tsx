@@ -46,7 +46,7 @@ export function Navbar() {
             </div>
 
             {/* Mobile menu button */}
-            <div className="md:hidden">
+            <div className="md:hidden pr-4">
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 className="p-2 rounded-md text-gray-600 hover:text-darkGreen dark:text-gray-300 dark:hover:text-gray-50 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none transition-colors duration-200"
@@ -97,7 +97,7 @@ export function Navbar() {
         {/* Close button in drawer */}
         <button
           onClick={() => setIsMobileMenuOpen(false)}
-          className="absolute top-4 right-4 p-2 rounded-md text-gray-600 hover:text-darkGreen dark:text-gray-300 dark:hover:text-gray-50 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none transition-colors duration-200"
+          className="absolute top-4 right-4 p-2 rounded-md text-gray-600 hover:text-darkGreen dark:text-gray-300 dark:hover:text-gray-50 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none transition-colors duration-200 pr-4"
         >
           <span className="sr-only">Close menu</span>
           <svg
