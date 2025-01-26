@@ -2,9 +2,15 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Navbar } from "@/components/nav/Navbar";
 // import { Inter } from 'next/font/google'
+import localFont from 'next/font/local'
 import { Noto_Naskh_Arabic } from 'next/font/google'
 
 // const inter = Inter({ subsets: ['latin'] })
+const lexend = localFont({
+  src: '../fonts/Lexend-VariableFont_wght.ttf',
+  variable: '--font-lexend',
+})
+
 const notoNaskhArabic = Noto_Naskh_Arabic({ 
   weight: ['400', '700'],
   subsets: ['arabic'],
@@ -22,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${notoNaskhArabic.variable}`}>
+    <html lang="en" className={`${lexend.variable} ${notoNaskhArabic.variable}`}>
       <body>
         <Navbar />
         <main className="pt-16">

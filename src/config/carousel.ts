@@ -1,15 +1,19 @@
+import aicExterior from "@/images/aic-exterior.jpg";
+import aicGroup from "@/images/aic-group.jpg";
+import { StaticImageData } from "next/image";
+
 export type CarouselImage = {
-    src: string;
+    src: StaticImageData;
     alt: string;
 };
 
 export const carouselImages: CarouselImage[] = [
     {
-        src: "/images/aic-exterior.jpg",
+        src: aicExterior,
         alt: "AIC Exterior",
     },
     {
-        src: "/images/aic-group.jpg",
+        src: aicGroup,
         alt: "AIC Group",
     },
 ];

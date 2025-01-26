@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { NavItem } from './NavItem';
 import { navigationItems } from '@/config/navigation';
 import Image from 'next/image';
+import aicLogo from '@/images/aic-logo.jpg';
 
 export function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -28,7 +29,7 @@ export function Navbar() {
           <div className="flex justify-between h-16 items-center">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-4">
-              <Image src='/images/aic-logo.jpg' alt="AIC Logo"
+              <Image src={aicLogo} alt="AIC Logo"
                 width={40}
                 height={40}
                 className="object-cover"/>
