@@ -1,4 +1,4 @@
-import { weeklyPrograms, programCategories, displayDays } from '@/config/programs'
+import { weeklyPrograms, displayDays } from '@/config/programs'
 
 function getProgramsForDay(day: string) {
   return weeklyPrograms.filter(program => program.day === day)

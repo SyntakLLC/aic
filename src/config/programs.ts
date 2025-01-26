@@ -58,17 +58,17 @@ export const weeklyPrograms: Program[] = [
     },
 ];
 
-export const programCategories = {
-    lecture: {
-        title: "Islamic Lectures",
-        description: "Structured learning sessions on various aspects of Islam",
-    },
-    community: {
-        title: "Community Services",
-        description: "Programs designed to serve and unite our community",
-    },
-    education: {
-        title: "Educational Programs",
-        description: "Interactive learning opportunities for all age groups",
-    },
-};
+// export const programCategories = {
+//     lecture: {
+//         title: "Islamic Lectures",
+//         description: "Structured learning sessions on various aspects of Islam",
+//     },
+//     community: {
+//         title: "Community Services",
+//         description: "Programs designed to serve and unite our community",
+//     },
+//     education: {
+//         title: "Educational Programs",
+//         description: "Interactive learning opportunities for all age groups",
+//     },
+// };
