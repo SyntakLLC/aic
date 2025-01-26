@@ -90,13 +90,33 @@ export function Navbar() {
 
       {/* Mobile Navigation Drawer */}
       <div
-        className={`fixed top-[64px] right-0 bottom-0 w-full max-w-sm bg-white dark:bg-darkGreen border-l border-gray-200 dark:border-gray-800 z-50 transform transition-transform duration-300 ease-in-out md:hidden ${
+        className={`fixed top-0 right-0 bottom-0 w-full max-w-sm bg-white dark:bg-darkGreen border-l border-gray-200 dark:border-gray-800 z-50 transform transition-transform duration-300 ease-in-out md:hidden ${
           isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
-        <div className="pt-2 pb-3 h-full overflow-y-auto">
+        {/* Close button in drawer */}
+        <button
+          onClick={() => setIsMobileMenuOpen(false)}
+          className="absolute top-4 right-4 p-2 rounded-md text-gray-600 hover:text-darkGreen dark:text-gray-300 dark:hover:text-gray-50 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none transition-colors duration-200"
+        >
+          <span className="sr-only">Close menu</span>
+          <svg
+            className="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+        <div className="pt-16 pb-3 h-full overflow-y-auto">
           {navigationItems.map((item) => (
-            <div key={item.href} className="block" onClick={() => setIsMobileMenuOpen(false)}>
+            <div key={item.href} className="block py-2" onClick={() => setIsMobileMenuOpen(false)}>
               <NavItem {...item} isMobile />
             </div>
           ))}

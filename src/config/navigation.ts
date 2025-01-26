@@ -18,7 +18,7 @@ export const navigationItems: NavItem[] = [
     },
     {
         title: "Donate",
-        href: "/donate",
+        href: "https://www.paypal.com/donate?token=A_8gyMMtLypAPoqUUnnjWuPgkm_U7elXldtB4P-SRRK9I_xKHV3DFp1cqTSffGa_0nTiN28yvVc4UmZg",
     },
     {
         title: "Contact",
