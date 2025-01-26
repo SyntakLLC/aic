@@ -44,8 +44,8 @@ export function Hero() {
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-brand-300 via-brand-300/70 to-blue-300 opacity-10 blur-lg" />
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-brand-300 via-brand-300/70 to-blue-300 opacity-10" />
               <div className="relative rounded-2xl bg-[#0A101F]/80 ring-1 ring-white/10 backdrop-blur pb-2">
-                <div className="absolute -top-px left-20 right-11 h-px bg-gradient-to-r from-brand-300/0 via-brand-300/70 to-brand-300/0" />
-                <div className="absolute -bottom-px left-11 right-20 h-px bg-gradient-to-r from-blue-400/0 via-blue-400 to-blue-400/0" />
+                {/* <div className="absolute -top-px left-20 right-11 h-px bg-gradient-to-r from-brand-300/0 via-brand-300/70 to-brand-300/0" />
+                <div className="absolute -bottom-px left-11 right-20 h-px bg-gradient-to-r from-blue-400/0 via-blue-400 to-blue-400/0" /> */}
                 <div className="pl-4 pt-4">
                   <table className="w-full text-slate-200 mb-4">
                     <thead>

@@ -117,7 +117,7 @@ export function Navbar() {
         </button>
         <div className="pt-16 pb-3 h-full overflow-y-auto">
           {navigationItems.map((item) => (
-            <div key={item.href} className="block py-2" onClick={() => setIsMobileMenuOpen(false)}>
+            <div key={item.href} className="block py-2 my-4" onClick={() => setIsMobileMenuOpen(false)}>
               <NavItem {...item} isMobile />
             </div>
           ))}
