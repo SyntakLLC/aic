@@ -58,7 +58,7 @@ export function Carousel({
                 className="object-cover"
                 priority={index === 0}
               />
-              <div className="absolute inset-0 bg-gray-900/20 dark:bg-gray-900/40" />
+              <div className="absolute inset-0 bg-darkGreen/20 dark:bg-darkGreen/40" />
             </div>
           ))}
         </div>

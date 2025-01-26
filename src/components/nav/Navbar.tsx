@@ -23,15 +23,19 @@ export function Navbar() {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 z-40">
+      <nav className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-xl dark:bg-darkGreen/80 border-b dark:border-none border-gray-200 dark:border-gray-800 z-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16 items-center">
             {/* Logo */}
-            <Link href="/" className="flex items-center">
+            <Link href="/" className="flex items-center gap-4">
               <Image src='/images/aic-logo.jpg' alt="AIC Logo"
                 width={40}
                 height={40}
                 className="object-cover"/>
+
+                <span className='hidden md:block uppercase'>
+                    Andover Islamic Center
+                </span>
             </Link>
 
             {/* Desktop Navigation */}
@@ -45,7 +49,7 @@ export function Navbar() {
             <div className="md:hidden">
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="p-2 rounded-md text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-50 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none transition-colors duration-200"
+                className="p-2 rounded-md text-gray-600 hover:text-darkGreen dark:text-gray-300 dark:hover:text-gray-50 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none transition-colors duration-200"
               >
                 <span className="sr-only">Open main menu</span>
                 <svg
@@ -78,7 +82,7 @@ export function Navbar() {
 
       {/* Mobile Navigation Overlay */}
       <div
-        className={`fixed inset-0 bg-gray-900/50 dark:bg-gray-900/70 z-40 transition-opacity duration-300 md:hidden ${
+        className={`fixed inset-0 bg-darkGreen/50 dark:bg-darkGreen/70 z-40 transition-opacity duration-300 md:hidden ${
           isMobileMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
         }`}
         onClick={() => setIsMobileMenuOpen(false)}
@@ -86,7 +90,7 @@ export function Navbar() {
 
       {/* Mobile Navigation Drawer */}
       <div
-        className={`fixed top-[64px] right-0 bottom-0 w-full max-w-sm bg-white dark:bg-gray-900 border-l border-gray-200 dark:border-gray-800 z-50 transform transition-transform duration-300 ease-in-out md:hidden ${
+        className={`fixed top-[64px] right-0 bottom-0 w-full max-w-sm bg-white dark:bg-darkGreen border-l border-gray-200 dark:border-gray-800 z-50 transform transition-transform duration-300 ease-in-out md:hidden ${
           isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >

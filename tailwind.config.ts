@@ -1,18 +1,23 @@
 import type { Config } from "tailwindcss";
 
 export default {
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
-  theme: {
-    extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
+    content: [
+        "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+        "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+        "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    ],
+    theme: {
+        extend: {
+            fontFamily: {
+                arabic: ["Noto Naskh Arabic", "serif"],
+                sans: ["Lexend", "sans-serif"],
+            },
+            colors: {
+                background: "var(--background)",
+                foreground: "var(--foreground)",
+                darkGreen: "#0A1110",
+            },
+        },
     },
-  },
-  plugins: [],
+    plugins: [require("@tailwindcss/typography")],
 } satisfies Config;
