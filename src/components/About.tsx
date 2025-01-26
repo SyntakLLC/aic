@@ -2,7 +2,7 @@ import { aboutContent } from '@/config/content'
 
 export function About() {
   return (
-    <div className="h-full p-8 bg-white dark:bg-darkGreen">
+    <div className="h-full p-8 bg-white dark:bg-slate-900">
       <h2 className="text-3xl tracking-tight text-darkGreen dark:text-white mb-8">
         {aboutContent.title}
       </h2>

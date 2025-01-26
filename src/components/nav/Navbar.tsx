@@ -24,7 +24,7 @@ export function Navbar() {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-xl dark:bg-darkGreen/80 border-b dark:border-none border-gray-200 dark:border-gray-800 z-40">
+      <nav className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-xl dark:bg-slate-900/80 border-b dark:border-none border-gray-200 dark:border-gray-800 z-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16 items-center">
             {/* Logo */}
@@ -83,7 +83,7 @@ export function Navbar() {
 
       {/* Mobile Navigation Overlay */}
       <div
-        className={`fixed inset-0 bg-darkGreen/50 dark:bg-darkGreen/70 z-40 transition-opacity duration-300 md:hidden ${
+        className={`fixed inset-0 bg-slate-900/50 dark:bg-slate-900/70 z-40 transition-opacity duration-300 md:hidden ${
           isMobileMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
         }`}
         onClick={() => setIsMobileMenuOpen(false)}
@@ -91,7 +91,7 @@ export function Navbar() {
 
       {/* Mobile Navigation Drawer */}
       <div
-        className={`fixed top-0 right-0 bottom-0 w-full max-w-sm bg-white dark:bg-darkGreen border-l border-gray-200 dark:border-gray-800 z-50 transform transition-transform duration-300 ease-in-out md:hidden ${
+        className={`fixed top-0 right-0 bottom-0 w-full max-w-sm bg-white dark:bg-slate-900 border-l border-gray-200 dark:border-gray-800 z-50 transform transition-transform duration-300 ease-in-out md:hidden ${
           isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >

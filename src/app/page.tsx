@@ -7,7 +7,7 @@ import { HadithBanner } from '@/components/HadithBanner';
 
 export default function Home() {
   return (
-    <div className="bg-white dark:bg-darkGreen">
+    <div className="bg-white dark:bg-slate-900">
       <Hero />
       <div className="grid md:grid-cols-2 py-3 sm:py-4 md:py-8 lg:py-12 max-w-7xl mx-auto">
         <News />

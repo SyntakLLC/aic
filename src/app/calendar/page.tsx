@@ -1,14 +1,14 @@
 export default function CalendarPage() {
   return (
-    <div className="min-h-screen bg-white dark:bg-darkGreen">
+    <div className="min-h-screen bg-white dark:bg-slate-900">
       {/* Header Section */}
-      <div className="bg-gradient-to-br from-emerald-900 to-emerald-800">
+      <div className="bg-gradient-to-br from-brand-900 to-brand-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
           <div className="text-center">
             <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4">
               Community Calendar
             </h1>
-            <p className="text-emerald-100 text-lg sm:text-xl max-w-2xl mx-auto">
+            <p className="text-brand-100 text-lg sm:text-xl max-w-2xl mx-auto">
               Stay updated with our prayer times, events, and programs. Join us in building a vibrant Muslim community in Andover.
             </p>
           </div>
@@ -19,12 +19,12 @@ export default function CalendarPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
         <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl overflow-hidden">
           {/* Calendar Header */}
-          <div className="bg-emerald-50 dark:bg-gray-700 px-6 py-4 border-b border-emerald-100 dark:border-gray-600">
+          <div className="bg-brand-50 dark:bg-gray-700 px-6 py-4 border-b border-brand-100 dark:border-gray-600">
             <div className="flex items-center justify-between">
-              <h2 className="text-lg font-semibold text-emerald-900 dark:text-white">
+              <h2 className="text-lg font-semibold text-brand-900 dark:text-white">
                 Event Calendar
               </h2>
-              <div className="text-sm text-emerald-600 dark:text-emerald-300">
+              <div className="text-sm text-brand-600 dark:text-brand-300">
                 All times are in Eastern Time
               </div>
             </div>
@@ -46,8 +46,8 @@ export default function CalendarPage() {
           </div>
 
           {/* Calendar Footer */}
-          <div className="bg-emerald-50 dark:bg-gray-700 px-6 py-4 border-t border-emerald-100 dark:border-gray-600">
-            <p className="text-sm text-emerald-600 dark:text-emerald-300 text-center">
+          <div className="bg-brand-50 dark:bg-gray-700 px-6 py-4 border-t border-brand-100 dark:border-gray-600">
+            <p className="text-sm text-brand-600 dark:text-brand-300 text-center">
               For event inquiries or to add an event, please contact the masjid administration
             </p>
           </div>
